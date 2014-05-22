@@ -1,0 +1,9 @@
+{
+  "id": "generic",
+  "test": {
+    "encrypted_data": "2z7i3Uiviv+wfnjx7mNGW+wKTHo17OsSGV9Mye1n1nM=\n",
+    "iv": "3H9OE9g2XEWNLji82AOxPw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

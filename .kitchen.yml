@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-12.04
+
+# Add a suite for your cookbook
+suites:
+  - name: ntp
+    customize:
+      memory: 512
+    run_list:
+#      - recipe[ntp::ntp]
+       - role[ntp]
+    attributes:
+      ntp:
+        driftfile: "/var/lib/ntp/foo.drift"
+

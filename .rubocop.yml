@@ -1,0 +1,18 @@
+AllCops:
+  Exclude:
+    - bin/**/*
+    - bundle/**/*
+    - vendor/**/*
+    - attributes/**/*
+    - Cheffile
+    - Berksfile
+    - metadata.rb
+    - cookbooks/**/*
+    - knife.rb
+    - Rakefile
+
+LineLength:
+  Max: 100
+MethodLength:
+  Max: 30
+
