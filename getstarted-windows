@@ -1,0 +1,23 @@
+# Gui install
+install virtual box (https://www.virtualbox.org/)
+install vagrant (http://www.vagrantup.com/)
+install git for windows (http://msysgit.github.io/) with Git Bash
+install rubyinstaller 1.9.3 (http://rubyinstaller.org/downloads/)
+install rubyinstaller dev-kit (https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe) see https://github.com/oneclick/rubyinstaller/wiki/Development-Kit for details
+
+# Windows PATH variable
+Ensure that the VBoxManage.exe binary is on the path (C:\Program Files\Oracle\VirtualBox)
+
+# windows command line:
+gem install bundler
+
+# Open Git Bash and within it type:
+cd c:
+mkdir Kitchen
+cd Kitchen
+mkdir sandbox
+cd sandbox
+git clone https://github.com/VlChef/sandbox.git .
+bundle install
+bundle exec kitchen create
+bundle exec kitchen login
